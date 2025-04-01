@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Nunito", sans-serif;
+}
+html{
+    overflow-x:hidden;
+}
+body{
+    color: white;
+    background-color: rgb(151, 185, 193);
+}
+header{
+    width: 100vw;
+    height:10vh;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(246, 188, 102, 0.915);
+
+}
+#logo{
+    font-size: 50px;
+    position: relative;
+    left: 50px;
+}
+#menuicon{
+    position: relative;
+    left:85%;
+    top:-15px;
+    display: none;
+}
+.navbar{
+    width: 80%;
+    position:absolute;
+    left: 10%;
+    top:2%;  
+}
+.navbar a{
+font-size: 15px;
+position: relative;
+left:700px;
+top:20px;
+margin-left: 50px;
+}
+.navbar a::after{
+    content: '';
+    width: 0;
+    background:rgb(82, 82, 82);
+    height: 2px;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.navbar a:active{
+    color: rgb(134, 247, 222);
+}
+#section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top:20vh;
+}
+#contain_Container{
+    width:60%;
+    height: 80vh;
+    position: absolute;
+}
+#home_img{
+    width:40%;
+    height: 80vh;
+    float: right;
+}
+#home_img #personimg{
+    width:50%;
+    background: fixed;
+    position: relative;
+    left: 15%;
+    top:8%;
+    border-radius:30%;
+}
+.headings,.socialmedias,button{
+    position: relative;
+    left: 100px;
+    top:10%;
+}
+#heading2{
+    font-size: 50px;
+}
+#facebook,#linkedin,#twitter,#instagram{
+    margin-right: 10px;
+    transition: all 0.5s;
+    color: rgb(119, 113, 205);
+}
+#facebook:hover,#linkedin:hover,#twitter:hover,#instagram:hover{
+    background-color: rgb(250, 250, 176);
+    border-radius: 3px;
+    scale:1.5;
+}
+.button,#about_button,.servies_button{
+    border-radius: 6px;
+    background-color: rgb(146, 146, 250);
+    padding:5px 10px 5px 10px;
+    transition: all 0.5s;
+}
+.button:hover,#about_button:hover,.servies_button:hover{
+    scale:1.04;
+    box-shadow: 0px 0px 5px rgb(121, 121, 122);
+}
+
+/* aboutcontainer */
+
+#aboutcontainer{
+    width: 100vw;
+    height: 100vh;
+}
+#box1Container{
+    width: 40vw;
+    height: 100%;
+    float: left;
+}
+#aboutimg{
+    width: 50%;
+    position:relative;
+    left:30%;
+    top:20%;
+    border-radius: 5px;
+    border: 5px solid skyblue;
+}
+#box2container{
+    float: left;
+    width: 60vw;
+    height: 100%;
+
+}
+.about_headings{
+    position: relative;
+    top: 40%;
+    left:0%;
+    
+}
+#span1{
+    font-size: 30px;
+    margin-left: 20px;
+}
+#about_heading2{
+    font-size: 20px;
+}
+#about_button{
+    position: relative;
+    top:50%;
+}
+#servies_container{
+    width: 100vw;
+    height: 100vh;
+}
+#Servies_heading1{
+    position: relative;
+    left:15%;
+}
+.Servies_boxes{
+    width: 23vw;
+    height: 23vw;
+    background-color: rgb(93, 93, 92);
+    float: left;
+    margin-left: 40px;
+    position: relative;
+    left: 15%;
+    top:15%;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.symblos{
+    position: relative;
+    top:15%;
+    left:45%;
+    color: aqua;
+    font-size: 40px;
+}
+.servies_headings2{
+    position: relative;
+    top:20%;
+    left:20%;
+}
+#servies_headings2{
+    position: relative;
+    left:40%;
+    top:20%;
+}
+.servies_para{
+    position: relative;
+    top:23%;
+    left:14%;
+    width:80%;
+}
+.Servies_boxes:hover{
+    scale: 1.1;
+}
+.servies_button{
+    position: relative;
+    top:30%;
+    left:35%;
+}
+/* portiflio */
+#portfloio_container{
+    width: 100vw;
+    height: 120vh;
+}
+#portflio_heading{
+    position: relative;
+    left:15%;
+    font-size: 30px;
+}
+#span2{
+    font-size: 30px;
+    color: aqua;
+    margin-left: 10px;
+}
+.portflio_boxes{
+    float: left;
+    width: 23vw;
+    height: 18vw;
+    background-color:rgb(93, 93, 92);
+    margin-right:70px;
+    margin-left:60px;
+    margin-top: 40px;
+    position: relative;
+    left:8%;
+    border-radius:10%;
+    overflow: hidden;
+}
+.codingimges{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+.headings_layer .portflio_headings{
+    position: relative;
+    top: 10%;
+    left:20%;
+    transition: all 2s;
+    
+
+ }
+.portflio_para{
+    position: relative;
+    top: 30%;
+    left:15%;
+    transition: all 2s;
+
+}
+
+.headings_layer{
+    width:100%;
+    height:100%;
+    background-image:linear-gradient(white,rgb(180, 180, 252));
+    position: absolute;
+    top:100%;
+    border-radius: 10%;
+    transition: all 2s;
+    color: red;
+    
+
+}
+
+.portflio_boxes:hover .headings_layer{
+    display: block;
+    transform: translateY(-100%);
+
+}
+/* contact */
+#contact_container{
+    width: 100vw;
+    height: 100vh;
+}
+#contact_heading{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top:10%;
+}
+#contact_form{
+    width: 50%;
+    height: 70%;
+    position: relative;
+    left: 27%;
+    top:15%;
+
+}
+.input_boxes_contact{
+    width:45%;
+    height:40px;
+    background-color: rgb(80, 80, 117);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: aliceblue;
+}
+#textares{
+    width: 92%;
+    height: 300px;
+    border-radius: 5px;
+    background-color:rgb(80, 80, 117) ;
+    position: relative;
+    top: 10px;
+    color: aliceblue;
+
+}
+#textares::-webkit-scrollbar{
+    display: none;
+}
+
+ 
+.input_boxes_contact::placeholder,#textares::placeholder{
+    color: gainsboro;
+    position: relative;
+    left:10px;
+}
+#button{
+    border: none;
+    outline: none;
+    background-color: #1696f9;
+    padding:5px 10px 5px 10px;
+    border-radius: 20px;
+    position: relative;
+    left:38%;
+    top:20px;
+    font-size: 20px;
+}
+@media(max-width:1200px)
+{
+    html{
+        font-size: 55%;
+    }
+    #menuicon{
+        display: block;
+    }
+  
+}
+@media(max-width:990px)
+{
+  #box1Container #aboutimg{
+    width: 100px;
+    position: relative;
+    top:-50px;
+  }
+  .about_headings{
+    position: relative;
+    left:-100px;
+    top:100px;
+  }
+  #about_button{
+    top: 140px;
+  }
+  #home_img #personimg{
+    top:20px;
+  }
+
+}
+@media(max-width:400px)
+{
+    #menuicon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top:100%;
+        width: 20%;
+        padding: 1rem 3rem;
+        padding-left: 0px;
+        margin-left: 230px;
+        background: black;
+        border-left: 2px solid red;
+        border-bottom: 2px solid red;
+        display:none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1rem;
+        margin-top: 1rem;
+        color: aqua;
+        margin-left: -680px;
+        position: relative;
+        top:-10px;
+    }
+    .navbar.active{
+        display: block;
+    }
+    #Servies_heading1,#portflio_heading{
+        top:-300px;
+    }
+    .Servies_boxes{
+        left: -10px;
+        width: 250px;
+        height: 200px;
+        top:-280px;
+        margin-top: 20px;
+    }
+    .portflio_boxes{
+        left:-10px;
+        width: 250px;
+        height: 200px;
+        top:-280px;
+        margin-top: 20px;
+    }
+    #contact_container{
+        height: fit-content;
+
+    }
+    .input_boxes_contact,#textares{
+       position: relative;
+       left:-40px;
+       width:250px;
+    }
+    #button{
+        left: -10px;
+    }
+    #contact_container{
+        position: relative;
+        top:-200px;
+    }
+
+}
+
+
+
